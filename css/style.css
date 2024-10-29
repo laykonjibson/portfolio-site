@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 370px;
+    border: 2px solid black;
+    border: none;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.profile-card::before{
+    content: "";
+    display: flex;
+    height: 35%;
+    width: 100%;
+    background-color: #0e4bf1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px 25px 0 0 ;
+
+}
+
+.profile-card .image{
+   /* width: 120px;
+    border-radius: 25px 25px 0 0;
+    border: 2px solid black;
+    background-color: blue;
+    padding: 3px;
+    height: 120px; 
+    object-fit: cover;
+    border: none;*/
+}
+
+.image .profile-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 57px;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    position: relative;
+}
+.profile-card h1{
+    display: flex;
+    font-size: 26px;
+    font-weight: 300;
+    padding: 10px 0;
+    color: blue;
+}
+.profile-card h2{
+    font-weight: 200;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.site{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 8px;
+    padding-bottom: 10px;
+}
+
+.site .link{
+    border: 2px solid white;
+    border-radius: 40px;
+    margin: 0 10px;
+    padding: 3px;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.site .link:hover{
+    transform: scale(1.2);
+}
+
+.site a{
+    color: white;
+    align-items: center;
+    font-size: 17px;
+}
+
+.button{
+    margin: 0 8px;
+    display: flex;
+    color: white;
+}
+
+.button .button{
+    display: flex;
+    border: 2px solid black;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button .button:hover{
+    background-color: blueviolet;
+    transform: scale(1.2);
+}
+
+.comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.comment .share{
+    margin: 8px 10px;
+    border-right: 3px solid grey;
+    padding: 5px;
+}
+
+.comment .share:last-child{
+    border: none;
+}
